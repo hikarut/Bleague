@@ -1,0 +1,13 @@
+version: '3'
+services:
+  bleague:
+    restart: always
+    build: .
+    container_name: 'bleague'
+    ports:
+      - "9001:9001"
+    working_dir: '/root/'
+    tty: true
+    volumes:
+      - ./src:/root/src/
+      - ~/.zshrc:/root/.zshrc

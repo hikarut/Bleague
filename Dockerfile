@@ -9,7 +9,6 @@ RUN pip install --upgrade setuptools
 RUN pip install requests
 RUN pip install feedparser
 RUN pip install pprint
-RUN pip install --upgrade firebase-admin
 RUN pip install beautifulsoup4
 
 env LANG=ja_JP.UTF-8

@@ -26,7 +26,7 @@ class Bleague:
         'WA刈谷': 2400,
         'ドルアリ': 7515,
         'おおきに': 7056,
-        'アオーレ': 2172,
+        'アオーレ': 5100,
         '横浜国プ': 11000,
         '大阪府立': 8000,
         '船橋': 4368,
@@ -61,7 +61,7 @@ class Bleague:
 
         response = requests.get(self.page_url)
         if (response.status_code != 200):
-            print("request error:" + url)
+            print("request error:" + self.page_url)
             return
 
         soup = BeautifulSoup(response.text, "html.parser")
